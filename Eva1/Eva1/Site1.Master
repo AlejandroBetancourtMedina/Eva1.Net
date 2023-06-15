@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Eva1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Regional</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 132px;
+            height: 110px;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div> 
+            <div>
+                <img style="border:solid;" alt="Aeropuerto" class="auto-style1" src="foto1.png" />
+                <span style="margin-left:20px;vertical-align:20px;font-size:280%">Aeropuerto Regional</span>
+            </div>
+            <br />  
+             
+
+            <div>
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+             
+            </div>
+            
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+            </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
